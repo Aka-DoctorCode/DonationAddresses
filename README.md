@@ -1,6 +1,8 @@
 # Donations
 
-These are different cryptocurrency donation addresses you can use. This will support development of all my World of Warcraft add-ons.
+Your support mean world to me! Donations keep World of Warcraft add-ons alive and growing. Every bit help me spend more time making great things for you. Much love and big thanks for help!
+
+Scan QR code or put correct address and network. Do not forget transfer minimum wallet allows. Thank you from bottom of heart for generous donation!
 
 | QR Code | Details |
 |---|---|
