@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support & Tips - WoW Add-ons</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles to maintain low HTML nesting */
+        .glass-card {
+            background-color: rgba(30, 41, 59, 0.7); /* #1E293B with opacity */
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1); /* #FFFFFF with opacity */
+            border-radius: 1rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .glass-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5); /* #000000 with opacity */
+        }
+        .copy-btn {
+            background-color: #3b82f6; /* #3B82F6 */
+            color: #ffffff;
+            border-radius: 0.5rem;
+            padding: 0.5rem 1rem;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+        .copy-btn:hover {
+            background-color: #2563eb; /* #2563EB */
+        }
+        .qr-image {
+            width: 220px;
+            height: 220px;
+            border-radius: 0.5rem;
+            background-color: #ffffff;
+            padding: 0.25rem;
+            object-fit: contain;
+        }
+        .curseforge-btn {
+            background-color: #F15A24; /* CurseForge brand orange */
+            color: white;
+            transition: background-color 0.2s ease;
+        }
+        .curseforge-btn:hover {
+            background-color: #d94f1e;
+        }
+        /* Custom Scrollbar for Carousel */
+        .carousel-container::-webkit-scrollbar {
+            height: 8px;
+        }
+        .carousel-container::-webkit-scrollbar-track {
+            background: rgba(30, 41, 59, 0.5);
+            border-radius: 4px;
+        }
+        .carousel-container::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+        }
+        .carousel-container::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200 font-sans antialiased min-h-screen">
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-40 bg-gray-900/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+            <span class="font-bold text-white text-lg">AkaDoctorCode</span>
+            <div class="flex gap-6">
+                <a href="#projects" class="text-sm font-semibold text-gray-300 hover:text-white transition-colors">Add-ons</a>
+                <a href="#crypto" class="text-sm font-semibold text-gray-300 hover:text-white transition-colors">Crypto Tips</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container (Level 2) -->
+    <div class="max-w-5xl mx-auto px-4 py-12">
+        
+        <!-- Header (Level 3) -->
+        <header class="mb-16 flex flex-col md:flex-row items-center gap-8 justify-center">
+            <img src="Media/AkaDoctorCode.png" alt="AkaDoctorCode Logo" class="w-56 h-auto drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]">
+            <div class="glass-card p-8 max-w-2xl text-left">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Support & Tips</h1>
+                <p class="text-lg text-gray-400">
+                    Your support means the world to me! Tips and voluntary contributions keep these World of Warcraft add-ons alive and growing. Every bit helps me spend more time making great things for you. Much love and big thanks for your help!
+                </p>
+            </div>
+        </header>
+
+        <!-- My Projects / Add-ons Section (Level 3) -->
+        <section id="projects" class="mb-20 pt-24 -mt-24">
+            <h2 class="text-[3rem] font-bold text-white text-center mb-8">My CurseForge Projects</h2>
+            <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-6 carousel-container items-stretch">
+                
+                <!-- Ascension Cast Bar Card -->
+                <article class="glass-card flex flex-col overflow-hidden w-[85vw] md:w-[350px] shrink-0 snap-center">
+                    <div class="w-full h-64 overflow-hidden border-b border-gray-700 shrink-0 p-1">
+                        <img src="Media/Ascension%20Cast%20Bar.png" alt="Ascension Cast Bar" class="w-full h-full object-cover scale-[1.2]">
+                    </div>
+                    <div class="p-2 flex flex-col flex-1">
+                        <h3 class="text-[1.5rem] leading-tight font-bold text-white my-auto text-center break-words whitespace-normal">Ascension Cast Bar</h3>
+                        <a href="https://www.curseforge.com/wow/addons/ascensioncastbar" target="_blank" rel="noopener noreferrer" class="curseforge-btn font-bold py-1.5 px-3 rounded-lg text-center flex items-center justify-center gap-2 mt-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                            View on CurseForge
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Ascension Keybind Sync Card -->
+                <article class="glass-card flex flex-col overflow-hidden w-[85vw] md:w-[350px] shrink-0 snap-center">
+                    <div class="w-full h-64 overflow-hidden border-b border-gray-700 shrink-0 p-1">
+                        <img src="Media/Ascension%20Keybind%20Sync.png" alt="Ascension Keybind Sync" class="w-full h-full object-cover scale-[1.2]">
+                    </div>
+                    <div class="p-2 flex flex-col flex-1">
+                        <h3 class="text-[1.5rem] leading-tight font-bold text-white my-auto text-center break-words whitespace-normal">Ascension Keybind Sync</h3>
+                        <a href="https://www.curseforge.com/wow/addons/ascensionkeybindsync" target="_blank" rel="noopener noreferrer" class="curseforge-btn font-bold py-1.5 px-3 rounded-lg text-center flex items-center justify-center gap-2 mt-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                            View on CurseForge
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Ascension Masque Card -->
+                <article class="glass-card flex flex-col overflow-hidden w-[85vw] md:w-[350px] shrink-0 snap-center">
+                    <div class="w-full h-64 overflow-hidden border-b border-gray-700 shrink-0 p-1">
+                        <img src="Media/Ascension%20Masque.png" alt="Ascension Masque" class="w-full h-full object-cover scale-[1.2]">
+                    </div>
+                    <div class="p-2 flex flex-col flex-1">
+                        <h3 class="text-[1.5rem] leading-tight font-bold text-white my-auto text-center break-words whitespace-normal">Ascension Masque</h3>
+                        <a href="https://www.curseforge.com/wow/addons/ascensionmasque" target="_blank" rel="noopener noreferrer" class="curseforge-btn font-bold py-1.5 px-3 rounded-lg text-center flex items-center justify-center gap-2 mt-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                            View on CurseForge
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Ascension Notes Card -->
+                <article class="glass-card flex flex-col overflow-hidden w-[85vw] md:w-[350px] shrink-0 snap-center">
+                    <div class="w-full h-64 overflow-hidden border-b border-gray-700 shrink-0 p-1">
+                        <img src="Media/Ascension%20Notes.png" alt="Ascension Notes" class="w-full h-full object-cover scale-[1.2]">
+                    </div>
+                    <div class="p-2 flex flex-col flex-1">
+                        <h3 class="text-[1.5rem] leading-tight font-bold text-white my-auto text-center break-words whitespace-normal">Ascension Notes</h3>
+                        <a href="https://www.curseforge.com/wow/addons/ascensionnotes" target="_blank" rel="noopener noreferrer" class="curseforge-btn font-bold py-1.5 px-3 rounded-lg text-center flex items-center justify-center gap-2 mt-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                            View on CurseForge
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Ascension Profession Helper Card -->
+                <article class="glass-card flex flex-col overflow-hidden w-[85vw] md:w-[350px] shrink-0 snap-center">
+                    <div class="w-full h-64 overflow-hidden border-b border-gray-700 shrink-0 p-1">
+                        <img src="Media/Ascension%20Profession%20Helper.png" alt="Ascension Profession Helper" class="w-full h-full object-cover scale-[1.2]">
+                    </div>
+                    <div class="p-2 flex flex-col flex-1">
+                        <h3 class="text-[1.5rem] leading-tight font-bold text-white my-auto text-center break-words whitespace-normal">Ascension Profession Helper</h3>
+                        <a href="https://www.curseforge.com/wow/addons/ascensionprofessionhelper" target="_blank" rel="noopener noreferrer" class="curseforge-btn font-bold py-1.5 px-3 rounded-lg text-center flex items-center justify-center gap-2 mt-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                            View on CurseForge
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Ascension Progress Data Bars Card -->
+                <article class="glass-card flex flex-col overflow-hidden w-[85vw] md:w-[350px] shrink-0 snap-center">
+                    <div class="w-full h-64 overflow-hidden border-b border-gray-700 shrink-0 p-1">
+                        <img src="Media/Ascension%20Progress%20Data%20Bars.png" alt="Ascension Progress Data Bars" class="w-full h-full object-cover scale-[1.2]">
+                    </div>
+                    <div class="p-2 flex flex-col flex-1">
+                        <h3 class="text-[1.5rem] leading-tight font-bold text-white my-auto text-center break-words whitespace-normal">Ascension Progress Data Bars</h3>
+                        <a href="https://www.curseforge.com/wow/addons/ascensionprogressdatabars" target="_blank" rel="noopener noreferrer" class="curseforge-btn font-bold py-1.5 px-3 rounded-lg text-center flex items-center justify-center gap-2 mt-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                            View on CurseForge
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Ascension QoL Card -->
+                <article class="glass-card flex flex-col overflow-hidden w-[85vw] md:w-[350px] shrink-0 snap-center">
+                    <div class="w-full h-64 overflow-hidden border-b border-gray-700 shrink-0 p-1">
+                        <img src="Media/Ascension%20QoL.png" alt="Ascension QoL" class="w-full h-full object-cover scale-[1.2]">
+                    </div>
+                    <div class="p-2 flex flex-col flex-1">
+                        <h3 class="text-[1.5rem] leading-tight font-bold text-white my-auto text-center break-words whitespace-normal">Ascension QoL</h3>
+                        <a href="https://www.curseforge.com/wow/addons/ascensionqol" target="_blank" rel="noopener noreferrer" class="curseforge-btn font-bold py-1.5 px-3 rounded-lg text-center flex items-center justify-center gap-2 mt-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                            View on CurseForge
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Ascension Quest Tracker Card -->
+                <article class="glass-card flex flex-col overflow-hidden w-[85vw] md:w-[350px] shrink-0 snap-center">
+                    <div class="w-full h-64 overflow-hidden border-b border-gray-700 shrink-0 p-1">
+                        <img src="Media/Ascension%20Quest%20Tracker.png" alt="Ascension Quest Tracker" class="w-full h-full object-cover scale-[1.2]">
+                    </div>
+                    <div class="p-2 flex flex-col flex-1">
+                        <h3 class="text-[1.5rem] leading-tight font-bold text-white my-auto text-center break-words whitespace-normal">Ascension Quest Tracker</h3>
+                        <a href="https://www.curseforge.com/wow/addons/ascensionquesttracker" target="_blank" rel="noopener noreferrer" class="curseforge-btn font-bold py-1.5 px-3 rounded-lg text-center flex items-center justify-center gap-2 mt-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                            View on CurseForge
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Ascension Suit Card -->
+                <article class="glass-card flex flex-col overflow-hidden w-[85vw] md:w-[350px] shrink-0 snap-center">
+                    <div class="w-full h-64 overflow-hidden border-b border-gray-700 shrink-0 p-1">
+                        <img src="Media/Ascension%20Suit.png" alt="Ascension Suit" class="w-full h-full object-cover scale-[1.2]">
+                    </div>
+                    <div class="p-2 flex flex-col flex-1">
+                        <h3 class="text-[1.5rem] leading-tight font-bold text-white my-auto text-center break-words whitespace-normal">Ascension Suit</h3>
+                        <a href="https://www.curseforge.com/wow/addons/ascensionsuit" target="_blank" rel="noopener noreferrer" class="curseforge-btn font-bold py-1.5 px-3 rounded-lg text-center flex items-center justify-center gap-2 mt-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                            View on CurseForge
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Ascension Talent Manager Card -->
+                <article class="glass-card flex flex-col overflow-hidden w-[85vw] md:w-[350px] shrink-0 snap-center">
+                    <div class="w-full h-64 overflow-hidden border-b border-gray-700 shrink-0 p-1">
+                        <img src="Media/Ascension%20Talent%20Manager.png" alt="Ascension Talent Manager" class="w-full h-full object-cover scale-[1.2]">
+                    </div>
+                    <div class="p-2 flex flex-col flex-1">
+                        <h3 class="text-[1.5rem] leading-tight font-bold text-white my-auto text-center break-words whitespace-normal">Ascension Talent Manager</h3>
+                        <a href="https://www.curseforge.com/wow/addons/ascensiontalentmanager" target="_blank" rel="noopener noreferrer" class="curseforge-btn font-bold py-1.5 px-3 rounded-lg text-center flex items-center justify-center gap-2 mt-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                            View on CurseForge
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Ascension Tooltip Card -->
+                <article class="glass-card flex flex-col overflow-hidden w-[85vw] md:w-[350px] shrink-0 snap-center">
+                    <div class="w-full h-64 overflow-hidden border-b border-gray-700 shrink-0 p-1">
+                        <img src="Media/Ascension%20Tooltip.png" alt="Ascension Tooltip" class="w-full h-full object-cover scale-[1.2]">
+                    </div>
+                    <div class="p-2 flex flex-col flex-1">
+                        <h3 class="text-[1.5rem] leading-tight font-bold text-white my-auto text-center break-words whitespace-normal">Ascension Tooltip</h3>
+                        <a href="https://www.curseforge.com/wow/addons/ascensiontooltip" target="_blank" rel="noopener noreferrer" class="curseforge-btn font-bold py-1.5 px-3 rounded-lg text-center flex items-center justify-center gap-2 mt-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                            View on CurseForge
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Cryptocurrency Grid (Level 3) -->
+        <section id="crypto" class="mb-12 pt-24 -mt-24">
+            <h2 class="text-2xl font-bold text-white text-center mb-2">Cryptocurrency Tips</h2>
+            <p class="text-sm text-gray-400 text-center mb-8 max-w-2xl mx-auto">Scan the QR code or copy the address. Please ensure you select the correct network and minimum transfer amount.</p>
+            
+            <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-6 carousel-container items-stretch">
+                
+                <!-- BTC Native Card (Level 4) -->
+                <article class="glass-card p-6 flex flex-col sm:flex-row items-center sm:items-start gap-4 shrink-0 snap-center w-[85vw] md:w-[450px]">
+                    <img src="donate/qrcodes/btc_btc_network_more_than_0_00001_btc.png" alt="BTC Native QR" class="qr-image" onerror="this.src='https://placehold.co/100x100/1e293b/ffffff?text=QR+BTC'">
+                    <div class="flex-1 w-full text-center sm:text-left">
+                        <h3 class="text-xl font-bold text-orange-400">Bitcoin (BTC)</h3>
+                        <p class="text-sm text-gray-400 mt-1"><strong>Network:</strong> BTC Network</p>
+                        <p class="text-sm text-gray-400"><strong>Minimum:</strong> > 0.00001 BTC</p>
+                        <div class="mt-3 flex gap-2">
+                            <input type="text" readonly value="1LyyVcvk1U6VsE5Hf35fnknw5PMoWoWCWH" class="bg-gray-800 text-xs w-full p-2 rounded border border-gray-700 text-gray-300 focus:outline-none">
+                            <button onclick="copyAddressText('1LyyVcvk1U6VsE5Hf35fnknw5PMoWoWCWH')" class="copy-btn text-xs shrink-0">Copy</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- BTC BEP20 Card (Level 4) -->
+                <article class="glass-card p-6 flex flex-col sm:flex-row items-center sm:items-start gap-4 shrink-0 snap-center w-[85vw] md:w-[450px]">
+                    <img src="donate/qrcodes/btc_bep20_network_more_than_0_00000002_btc.png" alt="BTC BEP20 QR" class="qr-image" onerror="this.src='https://placehold.co/100x100/1e293b/ffffff?text=QR+BTC'">
+                    <div class="flex-1 w-full text-center sm:text-left">
+                        <h3 class="text-xl font-bold text-orange-400">Bitcoin (BTC)</h3>
+                        <p class="text-sm text-gray-400 mt-1"><strong>Network:</strong> BEP20 Network</p>
+                        <p class="text-sm text-gray-400"><strong>Minimum:</strong> > 0.00000002 BTC</p>
+                        <div class="mt-3 flex gap-2">
+                            <input type="text" readonly value="0x2eb9749c45df875c5db1ad938faa83070cc87187" class="bg-gray-800 text-xs w-full p-2 rounded border border-gray-700 text-gray-300 focus:outline-none">
+                            <button onclick="copyAddressText('0x2eb9749c45df875c5db1ad938faa83070cc87187')" class="copy-btn text-xs shrink-0">Copy</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ETH Card (Level 4) -->
+                <article class="glass-card p-6 flex flex-col sm:flex-row items-center sm:items-start gap-4 shrink-0 snap-center w-[85vw] md:w-[450px]">
+                    <img src="donate/qrcodes/eth_erc20_bep20_network_more_than_0_0000003_eth.png" alt="ETH QR" class="qr-image" onerror="this.src='https://placehold.co/100x100/1e293b/ffffff?text=QR+ETH'">
+                    <div class="flex-1 w-full text-center sm:text-left">
+                        <h3 class="text-xl font-bold text-blue-400">Ethereum (ETH)</h3>
+                        <p class="text-sm text-gray-400 mt-1"><strong>Network:</strong> ERC20 / BEP20</p>
+                        <p class="text-sm text-gray-400"><strong>Minimum:</strong> > 0.0000003 ETH</p>
+                        <div class="mt-3 flex gap-2">
+                            <input type="text" readonly value="0x2eb9749c45df875c5db1ad938faa83070cc87187" class="bg-gray-800 text-xs w-full p-2 rounded border border-gray-700 text-gray-300 focus:outline-none">
+                            <button onclick="copyAddressText('0x2eb9749c45df875c5db1ad938faa83070cc87187')" class="copy-btn text-xs shrink-0">Copy</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- USDT ERC20/BEP20 Card (Level 4) -->
+                <article class="glass-card p-6 flex flex-col sm:flex-row items-center sm:items-start gap-4 shrink-0 snap-center w-[85vw] md:w-[450px]">
+                    <img src="donate/qrcodes/usdt_erc20_bep20_network_more_than_0_01_usdt.png" alt="USDT ERC20/BEP20 QR" class="qr-image" onerror="this.src='https://placehold.co/100x100/1e293b/ffffff?text=QR+USDT'">
+                    <div class="flex-1 w-full text-center sm:text-left">
+                        <h3 class="text-xl font-bold text-green-400">Tether (USDT)</h3>
+                        <p class="text-sm text-gray-400 mt-1"><strong>Network:</strong> ERC20 / BEP20</p>
+                        <p class="text-sm text-gray-400"><strong>Minimum:</strong> > 0.01 USDT</p>
+                        <div class="mt-3 flex gap-2">
+                            <input type="text" readonly value="0x2eb9749c45df875c5db1ad938faa83070cc87187" class="bg-gray-800 text-xs w-full p-2 rounded border border-gray-700 text-gray-300 focus:outline-none">
+                            <button onclick="copyAddressText('0x2eb9749c45df875c5db1ad938faa83070cc87187')" class="copy-btn text-xs shrink-0">Copy</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- USDT TRC20 Card (Level 4) -->
+                <article class="glass-card p-6 flex flex-col sm:flex-row items-center sm:items-start gap-4 shrink-0 snap-center w-[85vw] md:w-[450px]">
+                    <img src="donate/qrcodes/usdt_trc20_network_more_than_0_01_usdt.png" alt="USDT TRC20 QR" class="qr-image" onerror="this.src='https://placehold.co/100x100/1e293b/ffffff?text=QR+USDT'">
+                    <div class="flex-1 w-full text-center sm:text-left">
+                        <h3 class="text-xl font-bold text-green-400">Tether (USDT)</h3>
+                        <p class="text-sm text-gray-400 mt-1"><strong>Network:</strong> TRC20 Network</p>
+                        <p class="text-sm text-gray-400"><strong>Minimum:</strong> > 0.01 USDT</p>
+                        <div class="mt-3 flex gap-2">
+                            <input type="text" readonly value="TFPWr2c8na6aun5PfwVxyimEHZsXeYyP5P" class="bg-gray-800 text-xs w-full p-2 rounded border border-gray-700 text-gray-300 focus:outline-none">
+                            <button onclick="copyAddressText('TFPWr2c8na6aun5PfwVxyimEHZsXeYyP5P')" class="copy-btn text-xs shrink-0">Copy</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- USDC Card (Level 4) -->
+                <article class="glass-card p-6 flex flex-col sm:flex-row items-center sm:items-start gap-4 shrink-0 snap-center w-[85vw] md:w-[450px]">
+                    <img src="donate/qrcodes/usdc_erc20_bep20_network_more_than_0_01_usdc.png" alt="USDC QR" class="qr-image" onerror="this.src='https://placehold.co/100x100/1e293b/ffffff?text=QR+USDC'">
+                    <div class="flex-1 w-full text-center sm:text-left">
+                        <h3 class="text-xl font-bold text-blue-300">USD Coin (USDC)</h3>
+                        <p class="text-sm text-gray-400 mt-1"><strong>Network:</strong> ERC20 / BEP20</p>
+                        <p class="text-sm text-gray-400"><strong>Minimum:</strong> > 0.01 USDC</p>
+                        <div class="mt-3 flex gap-2">
+                            <input type="text" readonly value="0x2eb9749c45df875c5db1ad938faa83070cc87187" class="bg-gray-800 text-xs w-full p-2 rounded border border-gray-700 text-gray-300 focus:outline-none">
+                            <button onclick="copyAddressText('0x2eb9749c45df875c5db1ad938faa83070cc87187')" class="copy-btn text-xs shrink-0">Copy</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- BNB Card (Level 4) -->
+                <article class="glass-card p-6 flex flex-col sm:flex-row items-center sm:items-start gap-4 shrink-0 snap-center w-[85vw] md:w-[450px]">
+                    <img src="donate/qrcodes/bnb_bsc_20_bep20_network_more_than_0_000002_bnb.png" alt="BNB QR" class="qr-image" onerror="this.src='https://placehold.co/100x100/1e293b/ffffff?text=QR+BNB'">
+                    <div class="flex-1 w-full text-center sm:text-left">
+                        <h3 class="text-xl font-bold text-yellow-400">Binance Coin (BNB)</h3>
+                        <p class="text-sm text-gray-400 mt-1"><strong>Network:</strong> BEP20 (BSC-20)</p>
+                        <p class="text-sm text-gray-400"><strong>Minimum:</strong> > 0.000002 BNB</p>
+                        <div class="mt-3 flex gap-2">
+                            <input type="text" readonly value="0x2eb9749c45df875c5db1ad938faa83070cc87187" class="bg-gray-800 text-xs w-full p-2 rounded border border-gray-700 text-gray-300 focus:outline-none">
+                            <button onclick="copyAddressText('0x2eb9749c45df875c5db1ad938faa83070cc87187')" class="copy-btn text-xs shrink-0">Copy</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Legal Section (Level 3) -->
+        <footer class="bg-gray-800 bg-opacity-50 p-6 rounded-2xl border border-gray-700 text-sm text-gray-400 space-y-4 shadow-inner">
+            <h3 class="text-lg font-bold text-white mb-2">Legal Disclaimer</h3>
+            <p>
+                This add-on is provided completely for free. Any cryptocurrency sent to the addresses above is considered a voluntary tip to support my time as an independent developer. It does not constitute a purchase of software, does not grant any special rights or premium support, and is not tax-deductible, as I am not a registered charity. Please ensure you use the correct network and address, as I cannot be held responsible for funds lost due to transfer errors on the blockchain.
+            </p>
+            <p class="text-center text-white mt-4 font-semibold">
+                Thank you from the bottom of my heart for your generous support!
+            </p>
+        </footer>
+
+    </div>
+
+    <!-- Toast Notification (Level 2) -->
+    <div id="toastNotification" class="fixed bottom-5 right-5 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg transform transition-all duration-300 translate-y-10 opacity-0 hidden z-50">
+        Address copied to clipboard!
+    </div>
+
+    <script>
+        // Main function to copy text
+        function copyAddressText(addressToCopy) {
+            let tempInputElement = document.createElement('input');
+            
+            document.body.appendChild(tempInputElement);
+            tempInputElement.value = addressToCopy;
+            tempInputElement.select();
+            
+            // Using execCommand for better iframe compatibility
+            document.execCommand('copy');
+            document.body.removeChild(tempInputElement);
+            
+            displayToastMessage();
+        }
+
+        // Function to show visual alert
+        function displayToastMessage() {
+            let toastBox = document.getElementById('toastNotification');
+            
+            toastBox.classList.remove('hidden');
+            
+            // Small delay to allow the transition class to act
+            setTimeout(() => {
+                toastBox.classList.remove('translate-y-10', 'opacity-0');
+            }, 10);
+
+            // Hide notification after 3 seconds
+            setTimeout(() => {
+                toastBox.classList.add('translate-y-10', 'opacity-0');
+                
+                // Wait for animation to finish before hiding element
+                setTimeout(() => {
+                    toastBox.classList.add('hidden');
+                }, 300);
+                
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
