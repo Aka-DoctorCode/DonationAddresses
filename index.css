@@ -89,6 +89,16 @@ img, svg {
     max-width: 100%;
 }
 
+
+/* ==========================================================================
+   Shared Components
+   ========================================================================== */
+.icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+}
+
 /* ==========================================================================
    Base Layout
    ========================================================================== */
@@ -234,9 +244,7 @@ img, svg {
     margin-left: auto;
     margin-right: auto;
 }
-.securityWarning svg {
-    flex-shrink: 0;
-}
+
 .securityWarning p {
     font-size: 0.875rem;
     font-weight: 600;
@@ -284,6 +292,14 @@ img, svg {
 }
 
 /* Project Card Specifics */
+
+.cardTitle {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    font-weight: bold;
+    color: var(--colorWhite);
+}
+
 .projectCard {
     display: flex;
     flex-direction: column;
@@ -291,8 +307,7 @@ img, svg {
     flex: 0 0 85vw;
     width: 85vw;
     scroll-snap-align: center;
-    height: 100%;
-}
+    }
 @media (min-width: 768px) {
     .projectCard {
         flex: 0 0 350px;
@@ -320,10 +335,6 @@ img, svg {
     flex: 1;
 }
 .projectCardTitle {
-    font-size: 1.5rem;
-    line-height: 1.25;
-    font-weight: bold;
-    color: var(--colorWhite);
     margin-top: auto;
     margin-bottom: auto;
     text-align: center;
@@ -341,8 +352,7 @@ img, svg {
     flex: 0 0 90vw;
     width: 90vw;
     scroll-snap-align: center;
-    height: 100%;
-}
+    }
 @media (min-width: 640px) {
     .donationCard {
         flex-direction: row;
@@ -400,8 +410,7 @@ img, svg {
 }
 
 .donationCardTitle {
-    font-size: 1.25rem;
-    font-weight: bold;
+    /* Inherits from .cardTitle */
 }
 .titleOrange { color: #fb923c; } /* orange-400 */
 .titleBlue { color: #60a5fa; } /* blue-400 */
@@ -443,38 +452,15 @@ img, svg {
     outline: none;
 }
 
-.btn {
-    border-radius: 0.5rem;
-    font-weight: 600;
-    text-align: center;
-    transition: background-color var(--transitionFast);
-}
 
-.btnCurseforge {
-    background-color: var(--colorCurseforge);
-    color: var(--colorWhite);
-    padding: 0.375rem 0.75rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--spacingSm);
-    margin-top: var(--spacingSm);
-}
+
+
 .btnCurseforge:hover {
     background-color: var(--colorCurseforgeHover);
 }
-.btnCurseforge svg {
-    width: 1.25rem;
-    height: 1.25rem;
-}
 
-.btnCopy {
-    background-color: var(--colorPrimary);
-    color: var(--colorWhite);
-    padding: 0.5rem 1rem;
-    font-size: 0.875rem;
-    flex-shrink: 0;
-}
+
+
 .btnCopy:hover {
     background-color: var(--colorPrimaryHover);
 }
@@ -545,4 +531,37 @@ svg path {
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-width: 2;
+}
+
+.btn {
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacingSm);
+    transition: background-color var(--transitionFast);
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btnCurseforge {
+    background-color: var(--colorCurseforge);
+    color: var(--colorWhite);
+    margin-top: var(--spacingSm);
+}
+.btnCurseforge:hover {
+    background-color: var(--colorCurseforgeHover);
+}
+
+.btnCopy {
+    background-color: var(--colorPrimary);
+    color: var(--colorWhite);
+    flex-shrink: 0;
+}
+.btnCopy:hover {
+    background-color: var(--colorPrimaryHover);
 }
