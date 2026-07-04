@@ -1,8 +1,10 @@
-# Donations
+# Support & Tips
 
-Your support mean world to me! Donations keep World of Warcraft add-ons alive and growing. Every bit help me spend more time making great things for you. Much love and big thanks for help!
+Your support means the world to me! Tips and voluntary contributions keep this World of Warcraft add-on alive and growing. Every bit helps me spend more time making great things for you. Much love and big thanks for your help!
 
-Scan QR code or put correct address and network. Do not forget transfer minimum wallet allows. Thank you from bottom of heart for generous donation!
+Legal Disclaimer: This add-on is provided completely for free. Any cryptocurrency sent to the addresses below is considered a voluntary tip to support my time as an independent developer. It does not constitute a purchase of software, does not grant any special rights or premium support, and is not tax-deductible, as I am not a registered charity. Please ensure you use the correct network and address, as I cannot be held responsible for funds lost due to transfer errors on the blockchain.
+
+Scan the QR code or input the correct address and network. Do not forget to transfer at least the minimum the wallet allows. Thank you from the bottom of my heart for your generous support!
 
 | QR Code | Details |
 |----|----|
